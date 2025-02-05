@@ -7,6 +7,9 @@
 
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
 
+    <!--=============== Font Awesome ===============-->
+    <script src="https://kit.fontawesome.com/c90089438b.js" crossorigin="anonymous"></script>
+
     <!--=============== REMIXICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
@@ -22,13 +25,10 @@
 <body>
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">Travel</a>
+            <a href="#" class="nav__logo">Home</a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">Home</a>
-                    </li>
                     <li class="nav__item">
                         <a href="#about" class="nav__link">About</a>
                     </li>
@@ -44,10 +44,18 @@
                     <li class="nav__item">
                         <a href="#discover" class="nav__link">Discover</a>
                     </li>
-
                     <li class="nav__item">
                         <a href="#contact" class="nav__link">Contact</a>
                     </li>
+                    <div class="nav__item">
+                        <a href="https://www.airbnb.de/rooms/1329816305968728117?check_in=2025-09-05&check_out=2025-09-12&guests=1&adults=1&s=67&unique_share_id=6015f0f3-21a7-4cb3-a8ce-55e3872b0f37"
+                            target="_blank" class="nav__link" style="margin-right: 0.5rem;">
+                            <i class="fa-brands fa-airbnb"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="nav__link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
                 </ul>
 
                 <i class="ri-close-line nav__close" id="nav-close"></i>
@@ -67,29 +75,16 @@
 
             <div class="home__container container grid">
                 <div class="home__data">
-                    <span class="home__data-subtitle">Discover your place</span>
+                    <span class="home__data-subtitle">Discover</span>
                     <h1 class="home__data-title"> Villa <br> Penina</b></h1>
                     <div class="location_container" style="color: white; align-items: center; margin-bottom: 1rem;">
                         <i class="ri-map-pin-line" style="margin-right: 0.5rem;"></i>
-                        <p >Vivari, Greece</p>
+                        <p>Vivari, Greece</p>
                     </div>
                     <a href="#discover" class="button">Contact us</a>
 
 
                 </div>
-
-                <div class="home__social">
-                    <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
-                        <i class="ri-facebook-box-fill"></i>
-                    </a>
-                    <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
-                        <i class="ri-instagram-fill"></i>
-                    </a>
-                    <a href="https://twitter.com/" target="_blank" class="home__social-link">
-                        <i class="ri-twitter-fill"></i>
-                    </a>
-                </div>
-
                 <!-- <div class="home__info">
                     <div>
                         <span class="home__info-title">5 best places to visit</span>
@@ -106,7 +101,7 @@
         </section>
 
         <!--==================== Overview ====================-->
-        <section class="overview">
+        <section class="overview" style="margin-top: 0.5rem;margin-bottom: 0.5rem;">
             <div class="experience__container container grid">
                 <div class="experience__content grid">
                     <div class="experience__data">
@@ -129,19 +124,12 @@
                         <span class="experience__description">From <br> Athen</span>
                     </div>
                 </div>
-
-                <div class="experience__img grid">
-                    <div class="experience__overlay">
-                        <img src="assets/img/experience1.jpg" alt="" class="experience__img-one">
-                    </div>
-
-                    <div class="experience__overlay">
-                        <img src="assets/img/experience2.jpg" alt="" class="experience__img-two">
-                    </div>
-                </div>
             </div>
         </section>
 
+        <!-- <div style="display: flex; justify-content: center;">
+            <hr width="80%" style="border-color: rgb(234 234 234); opacity: 0.3;">
+        </div> -->
 
         <!--==================== ABOUT ====================-->
         <section class="about section" id="about">
@@ -168,6 +156,10 @@
             </div>
         </section>
 
+        <div style="display: flex; justify-content: center;">
+            <hr width="80%" style="border-color: rgb(234 234 234); opacity: 0.3;">
+        </div>
+
         <!-- Gallery -->
         <section class="gallery section" id="gallery">
             <h2 class="section__title">Gallery</h2>
@@ -184,13 +176,29 @@
                     <img class="imgSlide" src="assets/img/img3.JPG" style="width:100%">
                 </div>
 
+
+                <div class="mySlides1" style="display: flex !important; justify-content: center;">
+                    <div class="video__container" style="width: 100%; min-width: 400px; max-width: 800px;">
+                        <p><iframe
+                                style="position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; border: none;"
+                                src="https://www.youtube.com/embed/DB2WS3Civok?si=OWvsjSWKdZhsgVrZ" width="560"
+                                height="315" allowfullscreen="allowfullscreen"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                        </p>
+                    </div>
+                </div>
+
                 <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
             </div>
         </section>
 
-        <!--==================== VIDEO ====================-->
+        <div style="display: flex; justify-content: center;">
+            <hr width="80%" style="border-color: rgb(234 234 234); opacity: 0.3;">
+        </div>
 
+        <!--==================== VIDEO ====================-->
+        <!-- 
         <section class="section videofile">
             <h2 class="section__title">Video</h2>
 
@@ -204,8 +212,8 @@
                     </p>
                 </div>
             </div>
-        </section>
-    
+        </section> -->
+
 
 
 
@@ -233,17 +241,199 @@
             </div>
         </section> -->
 
+        <div style="display: flex; justify-content: center;">
+            <hr width="80%" style="border-color: rgb(234 234 234); opacity: 0.3;">
+        </div>
+
         <!--==================== Amenities ====================-->
         <section class="amenities section" id="amenities">
             <h2 class="section__title">Amenities</h2>
             <div class="amenities__container container grid">
-                <div class="amenities__item">
-                    <i class="ri-t-shirt-air-line"></i>
-                    <p>Dryer</p>
+                <div style="display: flex;flex-wrap: wrap; justify-content: flex-start;">
+                    <!--==================== Bad ====================-->
+                    <div class="amenities_container">
+                        <h3>Badezimmer</h3>
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Badewanne</p>
+                        </div>
+
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Seife oder Duschgel</p>
+                        </div>
+
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Außendusche</p>
+                        </div>
+                    </div>
+
+                    <!--==================== Schlafzimmer und Wäsche ====================-->
+                    <div class="amenities_container">
+                        <h3>Schlafzimmer und Wäsche</h3>
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Waschmaschine kostenlos</p>
+                        </div>
+
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Bettwäsche</p>
+                        </div>
+
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Handtücher (Dusche)</p>
+                        </div>
+
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Abdunklung</p>
+                        </div>
+                    </div>
+                    <!--==================== Unterhaltung ====================-->
+                    <div class="amenities_container">
+                        <h3>Unterhaltung</h3>
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>TV</p>
+                        </div>
+                    </div>
+                    <!--==================== Parken ====================-->
+                    <div class="amenities_container">
+                        <h3>Parken</h3>
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Kostenloser Parkplatz</p>
+                        </div>
+                    </div>
+                    <!--==================== Sicheres Zuhause ====================-->
+                    <div class="amenities_container">
+                        <h3>Sicheres Zuhause</h3>
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Feuerlöscher</p>
+                        </div>
+
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Erste-Hilfe-Set</p>
+                        </div>
+                    </div>
+                    <!--==================== Internet und Büro ====================-->
+                    <div class="amenities_container">
+                        <h3>Internet und Büro</h3>
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>WLAN</p>
+                        </div>
+
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Arbeitsplatz</p>
+                        </div>
+                    </div>
+                    <!--==================== Küche ====================-->
+                    <div class="amenities_container">
+                        <h3>Küche</h3>
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Küche
+                            </p>
+                        </div>
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Kühlschrank</p>
+                        </div>
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Grundausstattung zum Kochen</p>
+                        </div>
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Geschirr und Besteck</p>
+                        </div>
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Geschirrpülmaschine</p>
+                        </div>
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Herd</p>
+                        </div>
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Ofen</p>
+                        </div>
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Wasserkocher</p>
+                        </div>
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Kaffeemaschine</p>
+                        </div>
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Weingläser</p>
+                        </div>
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Toaster</p>
+                        </div>
+                    </div>
+                    <!--==================== Außenbereich ====================-->
+                    <div class="amenities_container">
+                        <h3>Außenbereich</h3>
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Essbereich im Freien</p>
+                        </div>
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Meerblick</p>
+                        </div>
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Außenküche</p>
+                        </div>
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Grill</p>
+                        </div>
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Liegestühle</p>
+                        </div>
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Privater Außenpool</p>
+                        </div>
+                    </div>
+
+                    <!--==================== Klimaanlage & Heizung ====================-->
+
+                    <div class="amenities_container">
+                        <h3>Klimaanlage & Heizung</h3>
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Klimaanlage</p>
+                        </div>
+
+                        <div class="amenities__item">
+                            <i class="fa-solid fa-umbrella-beach"></i>
+                            <p>Kamin</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
+        <div style="display: flex; justify-content: center;">
+            <hr width="80%" style="border-color: rgb(234 234 234); opacity: 0.3;">
+        </div>
 
         <!--==================== DISCOVER ====================-->
         <section class="discover section" id="discover">
@@ -265,13 +455,37 @@
             </div> -->
         </section>
 
-        <!--==================== SUBSCRIBE ====================-->
+        <div style="display: flex; justify-content: center;">
+            <hr width="80%" style="border-color: rgb(234 234 234); opacity: 0.3;">
+        </div>
+        <!--==================== Location ====================-->
+        <section class="discover section" id="discover">
+            <h2 class="section__title">Location</h2>
+            <p class="discover__description">
+                Just a two hour drive from Athen or a 1.5h drive from Kalamata.
+            </p>
+            <div style="display: flex; justify-content: center;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1019.0929869383159!2d22.9199409174405!3d37.53785189274807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1svivari!5e0!3m2!1sde!2sit!4v1738754520622!5m2!1sde!2sit"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+
+        <!--==================== Contact ====================-->
         <section class="contact section">
             <div class="subscribe__bg">
                 <div class="contact__container container">
                     <h2 class="section__title contact__title">Contact us</h2>
                     <p class="contact__description">To check availability of the Villa, ....
                     </p>
+                    <div style="display: flex; justify-content: center;margin-bottom: 4rem;">
+                        <a href="https://www.airbnb.de/rooms/1329816305968728117?check_in=2025-09-05&check_out=2025-09-12&guests=1&adults=1&s=67&unique_share_id=6015f0f3-21a7-4cb3-a8ce-55e3872b0f37"
+                            class="button">
+                            AirBnB
+                        </a>
+                    </div>
                     <p class="contact__description">If you want to save 10% on airbnb prices, contact us directly to
                         book the apartment:
                     </p>
@@ -411,6 +625,9 @@
 
     <!--=============== Room Gallery Slide JS ===============-->
     <script src="assets/js/room-img-gallery.js"></script>
+
+    <!--=============== Font Awesome ===============-->
+    <!-- <script src="https://kit.fontawesome.com/c90089438b.js" crossorigin="anonymous"></script> -->
 </body>
 
 </html>

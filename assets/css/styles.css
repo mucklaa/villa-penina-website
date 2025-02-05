@@ -105,6 +105,16 @@ body.dark-theme {
   font-size: var(--small-font-size);
 }
 
+.amenities_container {
+  padding: 1.5rem 3rem;
+  text-align: left;
+  flex-direction: column;
+  /* width: 50%; */
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 50%;
+}
+
 /*=============== BASE ===============*/
 * {
   box-sizing: border-box;
@@ -226,6 +236,10 @@ input {
 }
 
 @media screen and (max-width: 767px) {
+  .amenities_container{
+    width: 100%;
+  }
+
   .nav__menu {
     position: fixed;
     background-color: var(--body-color);
@@ -382,15 +396,16 @@ input {
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
-  background-color: var(--first-color);
-  color: var(--white-color);
+  background-color: var(--white-color);
+  color: var(--first-color);
   padding: 1rem 2rem;
   font-weight: var(--font-semi-bold);
   transition: .3s;
 }
 
 .button:hover {
-  background-color: var(--first-color-alt);
+  background-color: var(--white-color);
+  opacity: 0.8;
 }
 
 .button--flex {
@@ -618,7 +633,7 @@ input {
 }
 
 .video__container {
-  position: relative;
+  /* position: relative; */
   width: 100%;
   overflow: hidden;
   padding-top: 56.25%;
@@ -753,8 +768,8 @@ input {
   display: flex;
   flex: 1;
   padding-top: 0.5rem;
-  align-items: center;
-  justify-content: center;
+  align-items: self-start;
+  justify-content: flex-start;
 }
 
 .location_container {
@@ -1021,7 +1036,7 @@ input {
   }
 
   .section {
-    padding: 7rem 0 2rem;
+    padding: 4rem 0 4rem;
   }
 
   .home__container {
