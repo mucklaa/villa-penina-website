@@ -199,6 +199,10 @@ input {
   gap: 1.5rem;
 }
 
+.link_text{
+  text-align: center;
+}
+
 /*=============== HEADER ===============*/
 .header {
   width: 100%;
@@ -235,16 +239,18 @@ input {
   position: relative;
 }
 
-.links__container{
+.links__container {
   display: flex;
-  justify-content: space-evenly
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-.link__container{
+.link__container {
   display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
 .link__icon {
@@ -263,17 +269,17 @@ input {
 .instagram:hover {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   -webkit-background-clip: text;
-          /* Also define standard property for compatibility */
-          background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-  }
+}
 
 .maps:hover {
   /* background: radial-gradient(circle at 30% 107%, #4285F4 40%, #DB4437 5%, #F4B400 45%, #0F9D58 60%);
   -webkit-background-clip: text;
           /* Also define standard property for compatibility */
-          /* background-clip: text;
-  -webkit-text-fill-color: transparent; */ 
+  /* background-clip: text;
+  -webkit-text-fill-color: transparent; */
   color: #FF5A5F;
 }
 
@@ -282,7 +288,7 @@ input {
 }
 
 @media screen and (max-width: 767px) {
-  .amenities_container{
+  .amenities_container {
     width: 100%;
   }
 
@@ -531,11 +537,6 @@ input {
   margin-bottom: var(--mb-0-25);
 }
 
-/* .discover__description {
-  display: block;
-  font-size: var(--smaller-font-size);
-} */
-
 .discover__img {
   transition: var(--img-transition);
 }
@@ -783,6 +784,11 @@ input {
   color: var(--white-color);
 }
 
+.discover__description {
+  text-align: center !important;
+  margin-bottom: var(--mb-2-5);
+}
+
 /*=============== SUBSCRIBE ===============*/
 .subscribe__bg {
   background-color: var(--first-color-second);
@@ -826,10 +832,10 @@ input {
   flex-direction: row;
   display: flex;
   flex: 1;
-  justify-content:flex-start;
+  justify-content: flex-start;
 }
 
-.availability__button{
+.availability__button {
   border: var(--first-color);
   border-style: inset;
 }
@@ -875,71 +881,26 @@ input {
 
 /*=============== FOOTER ===============*/
 .footer__container {
-  row-gap: 5rem;
-}
-
-.footer__content {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  row-gap: 2rem;
-}
-
-.footer__title,
-.footer__subtitle {
-  font-size: var(--h3-font-size);
-}
-
-.footer__title {
-  margin-bottom: var(--mb-0-5);
-}
-
-.footer__description {
-  margin-bottom: var(--mb-2);
-}
-
-.footer__social {
-  font-size: 1.25rem;
-  color: var(--title-color);
-  margin-right: var(--mb-1-25);
-}
-
-.footer__subtitle {
-  margin-bottom: var(--mb-1);
-}
-
-.footer__item {
-  margin-bottom: var(--mb-0-75);
-}
-
-.footer__link {
-  color: var(--text-color);
-}
-
-.footer__link:hover {
-  color: var(--title-color);
-}
-
-.footer__rights {
+  margin-top: 4rem;
+  background-color: var(--first-color-second);
+  color: var(--white-color);
+  padding: 3rem;
   display: flex;
-  flex-direction: column;
-  row-gap: 1.5rem;
+  justify-content: center;
   text-align: center;
 }
 
-.footer__copy,
-.footer__terms-link {
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
+.footer__content {
+  font-size: smaller;
 }
 
-.footer__terms {
-  display: flex;
-  column-gap: 1.5rem;
-  justify-content: center;
+.footer__title {
+  color: var(--white-color);
+  ;
 }
 
-.footer__terms-link:hover {
-  color: var(--text-color);
-}
+
+
 
 /*========== SCROLL UP ==========*/
 .scrollup {
@@ -1130,11 +1091,6 @@ input {
 
   .about__description {
     margin-bottom: var(--mb-2);
-  }
-
-  .discover__description {
-    text-align: center;
-    margin-bottom: var(--mb-2-5);
   }
 
   .discover__container {
@@ -1342,13 +1298,13 @@ input {
 }
 
 .mySlides1 {
-text-align: center;
+  text-align: center;
 }
 
 .image_text {
   background-color: rgba(0, 0, 0, 0.2);
   width: fit-content;
-  padding: 1rem; 
+  padding: 1rem;
 }
 
 .align_center {
