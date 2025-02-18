@@ -1351,6 +1351,10 @@ text-align: center;
   padding: 1rem; 
 }
 
+.align_center {
+  text-align: center;
+}
+
 .image_text_container {
   display: flex;
   justify-content: center;
