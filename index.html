@@ -45,7 +45,7 @@
                         <a href="#discover" class="nav__link">Discover</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">Book</a>
+                        <a href="#book" class="nav__link">Book</a>
                     </li>
                 </ul>
 
@@ -74,7 +74,7 @@
                             style="margin-right: 0.5rem;"></i>
                         <p>Vivari, Greece</p>
                     </a>
-                    <a href="#discover" class="button">Book now</a>
+                    <a href="#book" class="button">Book now</a>
 
 
                 </div>
@@ -545,18 +545,18 @@
         <!--==================== DISCOVER ====================-->
         <section class="discover section" id="discover">
             <div class="container">
-            <h2 class="section__title">Discover the most <br> attractive places</h2>
-            <p class="discover__description">
-                Check out our guide for the best activities around the Villa:
-            </p>
-        </div>
+                <h2 class="section__title">Discover the most <br> attractive places</h2>
+                <p class="discover__description">
+                    Check out our guide for the best activities around the Villa:
+                </p>
+            </div>
         </section>
 
-        <!--==================== Contact ====================-->
-        <section class="contact section">
+        <!--==================== Book ====================-->
+        <section class="book section" id="book">
             <div class="subscribe__bg">
                 <div class="contact__container container">
-                    <h2 class="section__title contact__title">Contact us</h2>
+                    <h2 class="section__title contact__title">Book now</h2>
                     <p class="contact__description">To check availability of the Villa, ....
                     </p>
                     <div style="display: flex; justify-content: center;margin-bottom: 4rem;">
@@ -570,48 +570,50 @@
                     </p>
                     <div class="contact__contactitem">
                         <i class="ri-mail-line"></i>
-                        <p class="contact__email">villa@penina.com
+                        <p onclick="copyText2()" class="contact__email">villa@penina.com
                         </p>
-
+                        <button class="copy_button"><i style="margin-left: 0.5rem;" onclick="copyText2()" class="ri-file-copy-line"></i></button>
                     </div>
                     <div class="contact__contactitem">
-                        <i class="ri-instagram-line"></i>
-                        <p class="contact__email">Villa.Penina
-                        </p>
+                        <a class="instagram_linkout" href="https://www.instagram.com/villa.artemis/">
+                            <i class="ri-instagram-line"></i>
+                            <p class="contact__insta">Villa.Penina
+                            </p>
+                        </a>
                     </div>
                 </div>
         </section>
 
     </main>
 
-        <!--==================== Helpful Links ====================-->
-        <section class="discover section" id="discover">
-            <h2 class="section__title">Helpful Links</h2>
-            <div class="links__container">
-                <div class="link__container">
-                    <a href="https://maps.app.goo.gl/N4DWWFRa4yiMoDW27"> <i
-                            class="fa-solid fa-location-dot link__icon maps"></i></a>
-                    <a href="https://maps.app.goo.gl/N4DWWFRa4yiMoDW27">
-                        <p class="link_text">Where to find Villa Penina</p>
-                    </a>
-                </div>
-                <div class="link__container">
-                    <a href="your link here"><i class="fa-brands fa-instagram link__icon instagram"></i></a>
-                    <a href="your link here">
-                        <p class="link_text">Check out Villa Penina on Instagram</p>
-                    </a>
-                </div>
-                <div class="link__container">
-                    <a
-                        href="https://www.airbnb.de/rooms/1329816305968728117?check_in=2025-09-05&check_out=2025-09-12&guests=1&adults=1&s=67&unique_share_id=6015f0f3-21a7-4cb3-a8ce-55e3872b0f37">
-                        <i class="fa-brands fa-airbnb link__icon airbnb"></i></a>
-                    <a
-                        href="https://www.airbnb.de/rooms/1329816305968728117?check_in=2025-09-05&check_out=2025-09-12&guests=1&adults=1&s=67&unique_share_id=6015f0f3-21a7-4cb3-a8ce-55e3872b0f37">
-                        <p class="link_text">Check availability on AirBnB</p>
-                    </a>
-                </div>
+    <!--==================== Helpful Links ====================-->
+    <section class="discover section" id="discover">
+        <h2 class="section__title">Helpful Links</h2>
+        <div class="links__container">
+            <div class="link__container">
+                <a href="https://maps.app.goo.gl/N4DWWFRa4yiMoDW27"> <i
+                        class="fa-solid fa-location-dot link__icon maps"></i></a>
+                <a href="https://maps.app.goo.gl/N4DWWFRa4yiMoDW27">
+                    <p class="link_text">Where to find Villa Penina</p>
+                </a>
             </div>
-            <!-- <p class="discover__description">
+            <div class="link__container">
+                <a href="your link here"><i class="fa-brands fa-instagram link__icon instagram"></i></a>
+                <a href="your link here">
+                    <p class="link_text">Check out Villa Penina on Instagram</p>
+                </a>
+            </div>
+            <div class="link__container">
+                <a
+                    href="https://www.airbnb.de/rooms/1329816305968728117?check_in=2025-09-05&check_out=2025-09-12&guests=1&adults=1&s=67&unique_share_id=6015f0f3-21a7-4cb3-a8ce-55e3872b0f37">
+                    <i class="fa-brands fa-airbnb link__icon airbnb"></i></a>
+                <a
+                    href="https://www.airbnb.de/rooms/1329816305968728117?check_in=2025-09-05&check_out=2025-09-12&guests=1&adults=1&s=67&unique_share_id=6015f0f3-21a7-4cb3-a8ce-55e3872b0f37">
+                    <p class="link_text">Check availability on AirBnB</p>
+                </a>
+            </div>
+        </div>
+        <!-- <p class="discover__description">
                 Just a two hour drive from Athen or a 1.5h drive from Kalamata
             </p>
             <div style="display: flex; justify-content: center;">
@@ -620,7 +622,7 @@
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div> -->
-        </section>
+    </section>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
@@ -632,10 +634,10 @@
                         we offer you the <br> experience.
                     </p>
                     <div>
-                     <p>
-                        Sabine Szeli
-                        ....
-                     </p>
+                        <p>
+                            Sabine Szeli
+                            ....
+                        </p>
                     </div>
                 </div>
 

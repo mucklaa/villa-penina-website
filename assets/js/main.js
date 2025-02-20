@@ -163,12 +163,10 @@ if (selectedTheme) {
   themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
 }
 
-// Activate / deactivate the theme manually with the button
-themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme
-    document.body.classList.toggle(darkTheme)
-    themeButton.classList.toggle(iconTheme)
-    // We save the theme and the current icon that the user chose
-    localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.setItem('selected-icon', getCurrentIcon())
-})
+function copyText2() {
+     // Copy the text inside the text field
+    navigator.clipboard.writeText("villa@penina.com");
+  
+    // Alert the copied text
+    alert("Copied the text: " + "villa@penina.com");
+  }

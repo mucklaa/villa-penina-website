@@ -188,6 +188,13 @@ input {
   margin-bottom: var(--mb-2);
 }
 
+.email__button {
+  background-color: transparent; 
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+}
+
 .container {
   max-width: 968px;
   margin-left: var(--mb-1);
@@ -264,6 +271,20 @@ input {
 
 .link__icon:hover {
   font-size: large;
+}
+
+.ri-file-copy-line:hover {
+  font-size: larger;
+}
+
+.copy_button {
+  background-color: transparent;
+  color: white;
+  display: flex;
+}
+
+.instagram_linkout {
+  color:white; display: flex; align-items: center;
 }
 
 .instagram:hover {
